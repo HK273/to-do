@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Light Theme */
+  --v-l-gray: hsl(0, 0%, 98%);
+  --v-l-gray-blue: hsl(236, 33%, 92%);
+  --l-gray-blue: hsl(233, 11%, 84%);
+  --d-gray-blue: hsl(236, 9%, 61%);
+  --v-d-gray-blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+  --v-d-blue: hsl(235, 21%, 11%);
+  --v-d-d-blue: hsl(235, 24%, 19%);
+  --l-grayish-blue: hsl(234, 39%, 85%);
+  --l-grayish-blue-hover: hsl(236, 33%, 92%);
+  --d-grayish-blue: hsl(234, 11%, 52%);
+  --v-d-grayish-blue: hsl(233, 14%, 35%);
+  --vd-grayish-blue-two: hsl(237, 14%, 26%);
+
+  /* Other */
+  --gray: #eff0f6;
+  --tea-green: #c0e5c8;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--v-d-blue);
+  /* toggle transition */
+  transition: background 0.2s linear;
+}
+img {
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+header {
+  position: relative;
+  background: url(./assets/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 40rem;
+}
+input[type="text"] {
+  background-color: var(--v-d-d-blue);
+  color: var(--l-grayish-blue-hover);
+  border: none;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+input:focus {
+  outline: none;
+  border: 1px solid var(--d-gray-blue);
+}
+
+.child-header {
+  margin-top: 5rem;
+}
+/* flex for header */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10rem;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem 0 2rem 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+h2 {
+  text-align: center;
+  color: var(--l-gray-blue);
+  font-size: 1.7rem;
+  margin: 6rem 0 2rem 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+li {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin: auto;
+  /* This is a neat trick to fill one side of the container
+  and leave the other two items at the end */
+  grid-template-columns: 1fr auto;
+  font-family: "Raleway", sans-serif;
+}
+.g-w {
+  padding: 0 4rem 0 4rem;
+}
+
+.container {
+  /* Set this and header to relative to allow overlapping content */
+  position: relative;
+  margin: auto;
+  margin-top: -3rem;
+  border-radius: 1rem;
+  padding: 0 2rem 0 2rem;
+}
+.grid-two {
+  grid-template-columns: 1fr auto auto;
+}
+.test-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.grid-two:hover {
+  /* border: 4px solid var(--tea-green); */
+  border-radius: 1rem;
+  box-shadow: rgba(0, 247, 111, 0.25) 0px 13px 27px -5px,
+    rgba(0, 85, 255, 0.3) 0px 8px 16px -8px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.del-btn,
+.edit-btn {
+  color: var(--l-grayish-blue);
+}
+
+.add-btn:hover {
+  color: #61b599;
+}
+.edit-btn:hover {
+  color: rgb(255, 146, 44);
+}
+
+.del-btn:hover {
+  color: #fb3640;
+}
+
+.to-do {
+  border-radius: 0.5rem;
+  background-color: var(--v-d-d-blue);
+  color: var(--l-gray-blue);
+  width: 100%;
+}
+.to-do:hover {
+  cursor: pointer;
+}
+/* line through when checked */
+.line-through {
+  text-decoration: line-through;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Filter Styles */
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem 0 1.5rem;
+  gap: 1rem;
+}
+.filter-btn {
+  color: white;
+  background-color: var(--v-d-d-blue);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.filter-btn:hover {
+  background-color: var(--v-d-gray-blue);
+}
+.filter-btn:nth-child(4) {
+  background-color: #81171b;
+}
+.filter-btn:nth-child(3) {
+  background-color: #04724d;
+}
+.filter-btn:nth-child(4):hover {
+  background-color: rgb(243, 120, 120);
+}
+.filter-btn:nth-child(3):hover {
+  background-color: #61b599;
+}
+.filter-on {
+  background-color: var(--d-grayish-blue);
+}
+
+/* Light theme */
+body.light {
+  background-color: var(--v-l-gray-blue);
+}
+header.light {
+  position: relative;
+  background: url(./assets/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.light-h2 {
+  color: var(--d-grayish-blue);
+}
+.to-do.light {
+  background-color: var(--v-l-gray);
+  color: var(--v-d-blue);
+}
+.l-btn {
+  color: var(--v-d-blue);
+}
+input[type="text"].light {
+  background-color: var(--v-l-gray);
+  color: var(--v-d-blue);
+}
+
+@media only screen and (min-width: 70em) {
+  .container {
+    width: 70%;
+  }
+  .g-w {
+    max-width: 60%;
+  }
+  .btn-grid {
+    max-width: 70%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
