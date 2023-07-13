@@ -30,3 +30,6 @@ npm i --save-dev @types/uuid
 ### Drag and Drop
 
 - Need to define the size of the parent container, if you set size using the child element the drag and drop looks a bit janky and will lurch to the left when moved
+
+### GH Pages Notes
+

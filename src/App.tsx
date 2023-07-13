@@ -80,9 +80,9 @@ export default function App() {
   };
 
   // Some logging for testing
-  // useEffect(() => {
-  //   console.log(items);
-  // }, [items]);
+  useEffect(() => {
+    console.log(items);
+  }, [items]);
 
   // useEffect(() => {
   //   console.log(checkedItems);
