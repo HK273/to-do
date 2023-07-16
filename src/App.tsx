@@ -21,6 +21,12 @@ interface Item {
 type CheckedItems = {
   [itemId: string]: boolean;
 };
+// example CheckedItems Data Type
+// {
+//   "item1": true,
+//   "item2": false,
+//   "item3": true,
+// }
 
 export default function App() {
   // light Dark Theme
