@@ -58,3 +58,5 @@ export default defineConfig({
 ```
 
 Add a .github/workflows folder with the yml example from the vite docs
+
+Ensure you enable GitHub Actions in the Pages section of GitHub 
