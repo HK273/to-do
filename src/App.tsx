@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useThemeContext } from "./components/Theme";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import {
   DragDropContext,
   Draggable,
@@ -33,7 +34,7 @@ export default function App() {
   const { isDarkTheme } = useThemeContext();
   // =================================================== //
   const [newItem, setNewItem] = useState<string>();
-  const [items, setItems] = useState<Item[]>([]);
+  const [items, setItems] = useLocalStorage<Item[]>("todo-data", []);
   // Example item
   // ([
   //   {
