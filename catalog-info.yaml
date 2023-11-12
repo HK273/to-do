@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: to-do
+  annotations:
+    github.com/project-slug: HK273/to-do
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
