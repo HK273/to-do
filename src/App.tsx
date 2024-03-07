@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+// import { useEffect } from "react";
 import { useThemeContext } from "./components/Theme";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import {
@@ -86,6 +87,7 @@ export default function App() {
     }));
   };
 
+  // Add  useEffect import back in if want to test
   // Some logging for testing
   // useEffect(() => {
   //   console.log(items);
